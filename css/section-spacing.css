@@ -1,0 +1,75 @@
+.resume {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    margin-bottom: var(--spacing-xl); /* Reduced spacing at the bottom of resume section */
+}
+
+/* YouTube Section */
+.youtube-videos {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    margin-top: var(--spacing-xl); /* Reduced spacing at the top of YouTube section */
+}
+
+.youtube-container {
+    margin-top: var(--spacing-md);
+}
+
+.youtube-placeholder {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.youtube-placeholder-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.youtube-placeholder i {
+    font-size: 5rem;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.youtube-placeholder h3 {
+    font-size: 2.4rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.youtube-placeholder p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.code-comment {
+    font-family: var(--font-code);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xs);
+}
+
+.code-example {
+    font-family: var(--font-code);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--color-accent);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.view-more-container {
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+/* Contact Section */
+.contact {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    margin-top: var(--spacing-xl); /* Added extra spacing at the top of contact section */
+}

@@ -1,0 +1,96 @@
+/* Matrix Rain Animation for Profile Image */
+.profile-matrix-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.profile-matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.profile-matrix-column {
+    position: absolute;
+    top: -50px;
+    color: #01ddff;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    animation: profile-matrix-fall linear infinite;
+}
+
+.profile-matrix-digit {
+    display: block;
+    margin: 3px 0;
+    text-shadow: 0 0 8px #01ddff;
+}
+
+.profile-matrix-digit.bright {
+    color: #fff;
+    text-shadow: 0 0 10px #01ddff, 0 0 3px #fff;
+}
+
+@keyframes profile-matrix-fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+}
+
+/* Adjust profile image container to accommodate matrix rain */
+.profile-image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-box);
+}
+
+/* Modify profile image to work with matrix rain */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%) contrast(120%);
+    mix-blend-mode: normal;
+    position: relative;
+    z-index: 0;
+}
+
+/* Remove old glitch effect */
+.profile-image-glitch {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.profile-image-glitch::before {
+    content: none;
+}

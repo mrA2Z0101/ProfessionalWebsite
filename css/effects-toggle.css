@@ -1,0 +1,35 @@
+/* 
+   Effects Toggle Functionality
+   Toggle visual effects on/off
+*/
+
+/* Effects Toggle Button Styles */
+.effects-toggle {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-medium);
+}
+
+.effects-toggle:hover {
+    color: var(--color-text);
+    transform: scale(1.1);
+}
+
+.effects-toggle.disabled {
+    color: var(--color-text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .effects-toggle {
+        margin-left: 0.3rem;
+    }
+}

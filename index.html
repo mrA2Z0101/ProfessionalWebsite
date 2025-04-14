@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ethical Hacking Professional Portfolio - Cybersecurity Expert">
+    <meta name="keywords" content="ethical hacking, cybersecurity, penetration testing, security consultant">
+    <meta name="author" content="Ethical Hacker">
+    <!-- SEO optimization tags -->
+    <meta property="og:title" content="Ethical Hacking Professional Portfolio">
+    <meta property="og:description" content="Specialized in cybersecurity, penetration testing, and ethical hacking services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/profile-matrix.css">
+    <link rel="stylesheet" href="css/cursor-trail.css">
+    <link rel="stylesheet" href="css/matrix-rain.css">
+    <link rel="stylesheet" href="css/sound-control.css">
+    <link rel="stylesheet" href="css/effects-toggle.css">
+    <link rel="stylesheet" href="css/section-spacing.css">
+    <title>Aaron Zajicek | Cybersecurity Student Portfolio</title>
+    <!-- Analytics placeholder -->
+    <!-- 
+    Insert Google Analytics or other tracking code here
+    Example:
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR-ID');
+    </script>
+    -->
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-container" id="loader">
+        <div class="matrix-rain" id="matrix-rain"></div>
+        <div class="loader-content">
+            <div class="loader-text">LOADING</div>
+        </div>
+    </div>
+    
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" aria-label="Home">
+                    <span class="logo-text">&lt;/&gt; AARON <span class="accent">ZAJICEK</span></span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#blog" class="nav-link">YouTube</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <div class="controls-container">
+                            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                                <i class="fas fa-sun" id="theme-icon"></i>
+                            </button>
+                            <button id="sound-toggle" class="sound-toggle" aria-label="Toggle sound on/off">
+                                <i class="fas fa-volume-high" id="sound-icon"></i>
+                            </button>
+                            <button id="effects-toggle" class="effects-toggle" aria-label="Toggle visual effects on/off">
+                                <i class="fas fa-code" id="effects-icon"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch-text" data-text="Cybersecurity Student">Cybersecurity Student</h1>
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-button"></span>
+                            <span class="terminal-button"></span>
+                            <span class="terminal-button"></span>
+                            <span class="terminal-title">terminal@aaronzajicek:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="typewriter-text" id="typewriter"></div>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
+                    <p class="hero-tagline">Learning to secure the digital frontier, one skill at a time.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for hero image or animation -->
+                    <div class="hologram-container">
+                        <div class="hologram-effect"></div>
+                        <!-- 
+                        Insert hero image here
+                        Example: <img src="images/hero-image.png" alt="Cybersecurity visualization" class="hologram-image">
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll Down</span>
+                <span class="scroll-arrow">&darr;</span>
+            </div>
+        </div>
+        <div class="circuit-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Placeholder for profile image -->
+                    <div class="profile-image-container">
+                        <div class="profile-image-glitch">
+                            <img src="images/profile.jpg" alt="Aaron Zajicek Profile" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Cybersecurity Student</h3>
+                    <p>I am a dedicated cybersecurity student at the University of Houston-Victoria, pursuing a Bachelor of Applied Science in Computer Information Systems (expected graduation: December 2025). With a passion for cybersecurity and ethical hacking, I'm developing skills in penetration testing, vulnerability assessment, and security tools.</p>
+                    <p>My approach combines academic knowledge with hands-on projects, allowing me to build practical experience while I complete my education. I'm particularly interested in network security, SIEM tools, and hardware security applications.</p>
+                    
+                    <div class="skills-container">
+                        <h3>Technical Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Cybersecurity</h4>
+                                <div class="skill-bars">
+                                    <div class="skill-bar">
+                                        <span class="skill-name">SIEM Tools (Wazuh)</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <span class="skill-name">Network Security</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <span class="skill-name">Threat Detection</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Technical Skills</h4>
+                                <div class="skill-bars">
+                                    <div class="skill-bar">
+                                        <span class="skill-name">Linux/Ubuntu</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <span class="skill-name">Python</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <span class="skill-name">Hardware/Soldering</span>
+                                        <div class="skill-level">
+                                            <div class="skill-progress" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#resume" class="btn btn-primary">View Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pentest">Penetration Testing</button>
+                <button class="filter-btn" data-filter="security">Security Analysis</button>
+                <button class="filter-btn" data-filter="tools">Security Tools</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+							<img src="images/DeauthPacketDetector.png" alt="Deauthentication Detector" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Deauthentication Packet Detector</h3>
+                        <p class="project-description">Built a device that detects WiFi deauthentication packets used in DOS/DDOS attacks. Features two LED indicators: green for normal operation and red when deauthentication packets are detected.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Hardware</span>
+                            <span class="tech-tag">WiFi Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrA2Z0101/Deauthentication-Packet-Detector" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="tools">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+							<img src="images/StatusChecker.png" alt="Website Status Checker" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Website Status Checker Script</h3>
+                        <p class="project-description">Developed a Python script that checks the status and response times of multiple websites. Uses the requests library to send HTTP GET requests and handles exceptions gracefully.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTTP Requests</span>
+                            <span class="tech-tag">Monitoring</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrA2Z0101/Aaron-Zajiceks-Projects" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+							<img src="images/Wazuh.png" alt="Wazuh Installation" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wazuh SIEM Tool Installation</h3>
+                        <p class="project-description">Installed and configured the Wazuh SIEM (Security Information and Event Management) tool on Ubuntu. Deployed Wazuh agents to collect and analyze logs for threat detection.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SIEM</span>
+                            <span class="tech-tag">Log Management</span>
+                            <span class="tech-tag">Threat Detection</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="hardware">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+							<img src="images/CircuitBoard.png" alt="Circuit Board" class="profile-image">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mini Refrigerator Circuit Board Repair</h3>
+                        <p class="project-description">Diagnosed and repaired a circuit board with a blown fuse and overheated capacitor. Removed damaged components and soldered new ones to restore functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Hardware</span>
+                            <span class="tech-tag">Soldering</span>
+                            <span class="tech-tag">Problem Solving</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/aaronkeithzajicek_repair-circuitboard-tech-activity-7312294656719896578-q7X2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE3CdhIBZ97MX83v_mhG3RnmpOcKOBp8ibk" class="project-link"><i class="fas fa-external-link-alt"></i> Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional <span class="accent">Resume</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="resume-content">
+                <div class="resume-download">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Full Resume
+                    </a>
+                </div>
+                
+                <div class="resume-sections">
+                    
+                    <div class="resume-section">
+                        <h3 class="resume-section-title">
+                            <i class="fas fa-graduation-cap"></i> Education & Certifications
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Bachelor of Applied Science (BASc) in Computer Information Systems</h4>
+                                    <h5>University of Houston-Victoria</h5>
+                                    <span class="timeline-date">Aug 2022 - Dec 2025 (Expected)</span>
+                                    <p>Senior year student focusing on cybersecurity and information systems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Associate of Arts (AA)</h4>
+                                    <h5>Lone Star College</h5>
+                                    <span class="timeline-date">Aug 2019 - Dec 2022</span>
+                                    <p>Completed associate degree with general education courses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="certifications">
+                            <h4>Professional Certifications</h4>
+                            <div class="cert-grid">
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>IBM IT Support</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Foundations of Cybersecurity (Google)</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>IBM Generative AI: Introduction and Application </span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>IBM Introduction to Artificial Intelligence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube Videos Section -->
+    <section id="blog" class="youtube-videos">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="accent">YouTube</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="youtube-container">
+                <!-- YouTube Video Placeholder -->
+                <div class="youtube-placeholder">
+                    <div class="youtube-placeholder-inner">
+                        <i class="fab fa-youtube"></i>
+                        <h3>Latest YouTube Video</h3>
+                        <p class="code-comment"><iframe width="315" height="560" src="https://www.youtube.com/embed/JY7aEhu-gSI" title="DOS Attacking my own Router and using a ESP32 Micro Controller as a DDOS / DOS Detector!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <a href="https://www.youtube.com/@ByteSizedWisdom01" class="btn btn-primary">View My Channel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations, questions, or just to say hello. I'm always open to discussing new projects and opportunities.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Houston, Texas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aaronkeithzajicek/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/mrA2Z0101" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ByteSizedWisdom01" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://medium.com/@mr.aaronz0101" class="social-link" aria-label="Medium">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="circuit-overlay bottom"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;/&gt; AARON <span class="accent">ZAJICEK</span></span>
+                    <p>Securing the digital frontier, one vulnerability at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#blog">YouTube</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; <span id="current-year">2025</span> Aaron Zajicek. All Rights Reserved.
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/aaronkeithzajicek/" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mrA2Z0101" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@ByteSizedWisdom01" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://medium.com/@mr.aaronz0101" class="social-link" aria-label="Medium">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/loader.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/sound-control.js"></script>
+    <script src="js/effects-toggle.js"></script>
+    <script src="js/matrix-rain.js"></script>
+    <script src="js/profile-matrix.js"></script>
+    <script src="js/cursor-trail.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

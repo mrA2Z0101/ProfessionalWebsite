@@ -1,0 +1,23 @@
+/* Binary Particles Background */
+.binary-particles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; /* Behind content but above background */
+    opacity: 0.3; /* Subtle effect */
+}
+
+/* Ensure the canvas doesn't interfere with interactions */
+body {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure content remains above particles */
+.container, header, section, footer {
+    position: relative;
+    z-index: 2;
+}

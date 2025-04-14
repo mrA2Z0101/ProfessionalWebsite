@@ -1,0 +1,16 @@
+.matrix-rain-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.3; /* Further reduced opacity for even more subtlety */
+}
+
+/* Ensure the canvas doesn't interfere with other elements */
+body {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,162 @@
+/* 
+   Theme Switching Functionality
+   Light and Dark mode styles
+*/
+
+/* Dark Theme (Default) */
+:root {
+    /* Main Colors */
+    --color-background: #0a0a0a;
+    --color-background-alt: #111111;
+    --color-text: #e0e0e0;
+    --color-text-muted: #999999;
+    --color-accent: #01ddff; /* Cyan blue */
+    --color-accent-dark: #00b3cc;
+    --color-accent-glow: rgba(1, 221, 255, 0.5);
+    --color-secondary: #00c8ff; /* Secondary cyan accent */
+    
+    /* UI Elements */
+    --color-card-bg: rgba(20, 20, 20, 0.7);
+    --color-card-border: rgba(1, 221, 255, 0.3);
+    --color-input-bg: rgba(30, 30, 30, 0.8);
+    --color-input-border: rgba(1, 221, 255, 0.2);
+    
+    /* Shadows and Effects */
+    --shadow-neon: 0 0 10px rgba(1, 221, 255, 0.5), 0 0 20px rgba(1, 221, 255, 0.3), 0 0 30px rgba(1, 221, 255, 0.1);
+    --shadow-box: 0 4px 20px rgba(0, 0, 0, 0.5);
+    
+    /* Custom Cursor */
+    cursor: url('../cursors/custom-cursor.cur'), auto;
+}
+
+/* Apply cursor to body as well for consistent behavior */
+body {
+    cursor: url('../cursors/custom-cursor.cur'), auto;
+}
+
+/* Light Theme */
+:root.light-theme {
+    /* Main Colors */
+    --color-background: #f5f5f5;
+    --color-background-alt: #e0e0e0;
+    --color-text: #121212;
+    --color-text-muted: #555555;
+    --color-accent: #0099b3; /* Darker cyan for better contrast on light bg */
+    --color-accent-dark: #007a8c;
+    --color-accent-glow: rgba(0, 153, 179, 0.3);
+    --color-secondary: #00b3cc; /* Secondary cyan accent */
+    
+    /* UI Elements */
+    --color-card-bg: rgba(255, 255, 255, 0.9);
+    --color-card-border: rgba(0, 153, 179, 0.3);
+    --color-input-bg: rgba(240, 240, 240, 0.8);
+    --color-input-border: rgba(0, 153, 179, 0.2);
+    
+    /* Shadows and Effects */
+    --shadow-neon: 0 0 5px rgba(0, 153, 179, 0.3), 0 0 10px rgba(0, 153, 179, 0.2);
+    --shadow-box: 0 4px 20px rgba(0, 0, 0, 0.1);
+    
+    /* Custom Cursor for Light Theme */
+    cursor: url('../cursors/custom-cursor.cur'), auto;
+}
+
+/* Apply light theme cursor to body as well */
+:root.light-theme body {
+    cursor: url('../cursors/custom-cursor.cur'), auto;
+}
+
+/* Effects Disabled State - Override all cursor styles */
+:root.effects-disabled,
+:root.effects-disabled body,
+:root.effects-disabled *,
+:root.light-theme.effects-disabled,
+:root.light-theme.effects-disabled body,
+:root.light-theme.effects-disabled * {
+    cursor: default !important;
+}
+
+/* Effects Disabled State - Override pointer cursor for interactive elements */
+:root.effects-disabled a,
+:root.effects-disabled button,
+:root.effects-disabled input[type="button"],
+:root.effects-disabled input[type="submit"],
+:root.effects-disabled .nav-link,
+:root.effects-disabled .btn,
+:root.effects-disabled .theme-toggle,
+:root.effects-disabled .sound-toggle,
+:root.effects-disabled .effects-toggle,
+:root.light-theme.effects-disabled a,
+:root.light-theme.effects-disabled button,
+:root.light-theme.effects-disabled input[type="button"],
+:root.light-theme.effects-disabled input[type="submit"],
+:root.light-theme.effects-disabled .nav-link,
+:root.light-theme.effects-disabled .btn,
+:root.light-theme.effects-disabled .theme-toggle,
+:root.light-theme.effects-disabled .sound-toggle,
+:root.light-theme.effects-disabled .effects-toggle {
+    cursor: pointer !important;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-medium);
+}
+
+.theme-toggle:hover {
+    color: var(--color-text);
+    transform: rotate(15deg);
+}
+
+/* Circuit Background Pattern Adjustments for Light Mode */
+:root.light-theme .circuit-overlay {
+    background-image: 
+        linear-gradient(to bottom, rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.7)),
+        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230099b3' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E"),
+        linear-gradient(45deg, rgba(0, 153, 179, 0.05) 25%, transparent 25%, transparent 50%, rgba(0, 153, 179, 0.05) 50%, rgba(0, 153, 179, 0.05) 75%, transparent 75%, transparent);
+}
+
+/* Terminal Adjustments for Light Mode */
+:root.light-theme .terminal {
+    background-color: rgba(240, 240, 240, 0.9);
+    border: 1px solid var(--color-accent);
+    box-shadow: 0 0 20px rgba(0, 153, 179, 0.2);
+}
+
+:root.light-theme .terminal-header {
+    background-color: rgba(220, 220, 220, 0.9);
+    border-bottom: 1px solid rgba(0, 153, 179, 0.2);
+}
+
+:root.light-theme .terminal-title {
+    color: #555555;
+}
+
+/* Header Adjustments for Light Mode */
+:root.light-theme .header {
+    background-color: rgba(245, 245, 245, 0.8);
+    border-bottom: 1px solid rgba(0, 153, 179, 0.1);
+}
+
+:root.light-theme .header.scrolled {
+    background-color: rgba(245, 245, 245, 0.95);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Transition for smooth theme switching */
+body, .header, .terminal, .circuit-overlay, .btn, .nav-link, .skill-progress, .project-card, .timeline-item, .blog-card, .contact-form input, .contact-form textarea {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Ensure links and interactive elements maintain the custom cursor */
+a, button, input[type="button"], input[type="submit"], .nav-link, .btn, .theme-toggle, .sound-toggle, .effects-toggle {
+    cursor: url('../cursors/custom-cursor.cur'), pointer !important;
+}
